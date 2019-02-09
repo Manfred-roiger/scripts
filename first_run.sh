@@ -19,8 +19,8 @@
 # Add a certificate to system keychain
 # Copy the certificate to /Users/Shared in the packacge
 # first and remove it after ist was added.
-/usr/bin/security add-trusted-cert -d -r trustRoot -k /Library/Keychains/System.keychain /Users/Shared/your.cert.com
-/bin/rm -f /Users/Shared/wco-fw.w-co.de.cer
+/usr/bin/security add-trusted-cert -d -r trustRoot -k /Library/Keychains/System.keychain /Users/Shared/your.cert.cer
+/bin/rm -f /Users/Shared/your.cert.cer
 
 # Skip Apple Setup Assistant
 /usr/bin/touch /private/var/db/.AppleSetupDone
